@@ -1,17 +1,17 @@
 /**************************************************************
  *** RHmm package
- ***                                                         
- *** File: StdAfxRHmm.h 
- ***                                                         
- *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr> 
+ ***
+ *** File: StdAfxRHmm.h
+ ***
+ *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr>
  *** Author: Sebastian BAUER <sebastian.bauer@charite.de>
- ***                                                         
+ ***
  **************************************************************/
 
 #include "OTMathUtil.h"
 #include "StatUtil.h"
-#include "LogProb.h"
-#include "SamplesUtil.h"
+#include "logprob.h"
+#include "samplesUtil.h"
 #include "MultivariateNormalUtil.h"
 #include "Hmm.h"
 #include "cCyclicVector.h"

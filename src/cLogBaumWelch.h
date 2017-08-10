@@ -1,11 +1,11 @@
 /**************************************************************
  *** RHmm package
- ***                                                         
- *** File: cLogBaumWelch.h 
- ***                                                         
- *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr> 
+ ***
+ *** File: cLogBaumWelch.h
+ ***
+ *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr>
  *** Author: Sebastian BAUER <sebastian.bauer@charite.de>
- ***                                                         
+ ***
  **************************************************************/
 
 #ifndef _CLOGBAUMWELCH_H_
@@ -13,13 +13,13 @@
 #pragma once
 #include "cInParam.h"
 #include "cHmm.h"
-#include "LogProb.h"
+#include "logprob.h"
 
 class cLogBaumWelch
 {       private :
                         uint    mvNSample               ;
                         uint*   mvT                             ;
-        public :                                                
+        public :
                         cDMatrix*      mLogAlpha       ;
                         cDMatrix*      mLogBeta        ;
                         cDVector*      mLogRho         ;

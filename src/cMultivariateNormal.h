@@ -1,11 +1,11 @@
 /**************************************************************
  *** RHmm package
- ***                                                         
- *** File: cMultivariateNormal.h 
- ***                                                         
- *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr> 
+ ***
+ *** File: cMultivariateNormal.h
+ ***
+ *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr>
  *** Author: Sebastian BAUER <sebastian.bauer@charite.de>
- ***                                                         
+ ***
  **************************************************************/
 
 #ifndef _CMULTIVARIATENORMAL_H_
@@ -13,7 +13,7 @@
 #pragma once
 
 #include "cDistribution.h"
-#include "SamplesUtil.h"
+#include "samplesUtil.h"
 
 class cMultivariateNormal : public cDistribution
 {       private :

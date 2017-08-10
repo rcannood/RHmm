@@ -1,11 +1,11 @@
 /**************************************************************
  *** RHmm package
- ***                                                         
- *** File: SamplesUtil.h 
- ***                                                         
- *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr> 
+ ***
+ *** File: samplesUtil.h
+ ***
+ *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr>
  *** Author: Sebastian BAUER <sebastian.bauer@charite.de>
- ***                                                         
+ ***
  **************************************************************/
 
 #ifndef _SAMPLESUTIL_H_

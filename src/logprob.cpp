@@ -1,14 +1,14 @@
 /**************************************************************
  *** RHmm package
- ***                                                         
- *** File: LogProb.cpp 
- ***                                                         
- *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr> 
+ ***
+ *** File: logprob.cpp
+ ***
+ *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr>
  *** Author: Sebastian BAUER <sebastian.bauer@charite.de>
- ***                                                         
+ ***
  **************************************************************/
 
-#include "LogProb.h"
+#include "logprob.h"
 
 double eexp(const double theX)
 {
@@ -27,10 +27,10 @@ double eln(const double theX)
 }
 
 double elnsum1(const double theX, const double theY)
-{       
+{
 double  myeLnX = eln(theX),
                 myeLnY = eln(theY) ;
-        
+
         if ( (myeLnX <= LOGZERO) || (myeLnY <= LOGZERO) )
         {       if (myeLnX <= LOGZERO)
                         return(myeLnY) ;
@@ -38,7 +38,7 @@ double  myeLnX = eln(theX),
                         return(myeLnX) ;
         }
         else
-        {       if (myeLnX > myeLnY) 
+        {       if (myeLnX > myeLnY)
                         return(myeLnX + eln(1.0+exp(myeLnY-myeLnX))) ;
                 else
                         return(myeLnY + eln(1.0+exp(myeLnX-myeLnY))) ;
@@ -46,13 +46,13 @@ double  myeLnX = eln(theX),
 }
 
 double elnsum(const double theeLnX, const double theeLnY)
-{       
+{
 // elnsum(eln(x), eln(y)) = eln(x+y) pour x, y > LOGZERO
 // elnsum(LOGZERO, eln(y)) = eln(y)
 // elnsum(eln(x), LOGZERO) = eln(x)
 double  myeLnX = MAX(theeLnX, theeLnY),
                 myeLnY = MIN(theeLnX, theeLnY) ;
-        
+
         if (myeLnY <= LOGZERO)
                 return(myeLnX) ;
         else

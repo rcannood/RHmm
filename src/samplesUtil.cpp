@@ -1,11 +1,11 @@
 /**************************************************************
  *** RHmm package
- ***                                                         
- *** File: SamplesUtil.cpp 
- ***                                                         
- *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr> 
+ ***
+ *** File: samplesUtil.cpp
+ ***
+ *** Author: Ollivier TARAMASCO <Ollivier.Taramasco@imag.fr>
  *** Author: Sebastian BAUER <sebastian.bauer@charite.de>
- ***                                                         
+ ***
  **************************************************************/
 
 #include "StdAfxRHmm.h"
@@ -13,7 +13,7 @@
 void flatSamples(cDVector* theInVect, uint theNSample, uint theDimObs, uint theNObsAllSamples, cDVector& theOutVect)
 {
 // Pour un sample Y[i][j]== Y[i + j*DimObs]
-// Pour N samples Y[n][i][j] == Y[n][i + j *DimObs] à remplacer par un seul sample de taille correcte
+// Pour N samples Y[n][i][j] == Y[n][i + j *DimObs] ? remplacer par un seul sample de taille correcte
         for (register uint n = 0 ; n < theNSample ; n++)
                 for (register uint j = 0 ; j < theDimObs ; j++)
                 {       uint myNObs = theInVect[n].mSize / theDimObs ;
